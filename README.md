@@ -4,6 +4,11 @@ files. Currently just an experiment. Given the `nginx.org` source-code, with the
 use of an ugly script, we extract block and expression syntax definitions and
 output them to modules.
 
+Even though I don't feel good at all about this, it's pretty fun to see it
+working. The `nginx` documentation currently is generating 11344LOC of
+[**Haddock annotated**](http://www.yamadapc.com.br/haskell-language-conf-nginx/Nginx_Ngx_Http_Proxy_Module.html)
+Haskell code.
+
 Blocks and expressions are outputted as their respective generators. The `nginx`
 documentation mentions `context` in which a directive may occur, so we can
 assert at compile-time that directives are used on correct contexts.
