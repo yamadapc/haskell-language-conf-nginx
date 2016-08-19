@@ -6,8 +6,9 @@ output them to modules.
 
 Blocks and expressions are outputted as their respective generators. The `nginx`
 documentation mentions `context` in which a directive may occur, so we can
-assert at compile-time that directives aren't used on incorrect contexts. For
-example, the following will currently compile:
+assert at compile-time that directives are used on correct contexts.
+
+For example, the following will currently compile:
 
 ```haskell
 {-# LANGUAGE OverloadedStrings #-}
